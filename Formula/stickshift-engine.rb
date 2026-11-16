@@ -13,7 +13,7 @@ class StickshiftEngine < Formula
   desc "Metal graphics engine for Apple Silicon: a C library, Rust crates and a demo"
   homepage "https://github.com/parsabee/StickShiftEngine"
   url "https://github.com/parsabee/StickShiftEngine/releases/download/v0.1.0/stickshift-engine-0.1.0-aarch64-apple-darwin.tar.gz"
-  sha256 "4166491d4abaadfa304af577ed2a0ad8365bb31d138c99c94110cc912079a93c"
+  sha256 "5ab4f58cc1a3d125d6d0cc9613ef5cf06d376b33435b6809979a5e7346647a63"
   license "Apache-2.0"
 
   # Prebuilt for Apple Silicon only. On an Intel Mac (or Linux) brew refuses to install with
