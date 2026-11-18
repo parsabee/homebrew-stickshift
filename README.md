@@ -5,20 +5,14 @@ engine for Apple platforms that renders with raw Metal.
 
 ```sh
 brew install parsabee/stickshift/stickshift-engine
-stickshift-demo
 ```
 
 **Apple Silicon (arm64) Macs only.** Homebrew refuses to install on Intel Macs.
 
-Installs:
-- the prebuilt `stickshift-demo`, the engine's playable demo;
-- the C library (`libstickshift`, its `stickshift.h` header, a Swift module map and a pkg-config
-  file);
-- the engine source under `$(brew --prefix)/share/stickshift-engine/src`, for use as Cargo path
-  dependencies.
+Installs the engine source under `$(brew --prefix)/share/stickshift-engine/src`, for use as Cargo
+path dependencies. Run `brew info stickshift-engine` for an example.
 
-Run `brew info stickshift-engine` for details.
+A game can also skip the install and depend on a release tag directly; see
+[Using the engine in a game](https://github.com/parsabee/StickShiftEngine#using-the-engine-in-a-game).
 
-The canonical formula lives in the main repo at
-[`packaging/homebrew/stickshift-engine.rb`](https://github.com/parsabee/StickShiftEngine/blob/main/packaging/homebrew/stickshift-engine.rb).
-Each release's workflow points it, and this tap's copy, at the new release.
+Each release points the formula's `url` and `sha256` at its tag's source archive.
